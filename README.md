@@ -1,4 +1,4 @@
-# GrimoireLab Manuscripts [![Build Status](https://github.com/chaoss/grimoirelab-manuscripts/workflows/build/badge.svg)](https://github.com/chaoss/grimoirelab-manuscripts/actions?query=workflow:build+branch:master+event:push) [![Coverage Status](https://coveralls.io/repos/github/chaoss/grimoirelab-manuscripts/badge.svg?branch=master)](https://coveralls.io/github/chaoss/grimoirelab-manuscripts?branch=master)
+# GrimoireLab Manuscripts [![Build Status](https://github.com/chaoss/grimoirelab-manuscripts/workflows/build/badge.svg)](https://github.com/chaoss/grimoirelab-manuscripts/actions?query=workflow:build+branch:master+event:push) [![Coverage Status](https://coveralls.io/repos/github/chaoss/grimoirelab-manuscripts/badge.svg?branch=master)](https://coveralls.io/github/chaoss/grimoirelab-manuscripts?branch=master) TEST
 
 The aim of this project is the automatic generation of reports from the enriched indexes with items from perceval data sources (git commits, github pull requests, bugzilla bugs ...) enriched using GrimoireELK.
 
@@ -11,16 +11,18 @@ The basic steps creating a report for git, gerrit, its and mls data sources from
 bin/manuscripts -g --data-sources git gerrit its mls -u <elastic_url> -s 2015-04-01 -e 2017-04-01 -d project_data -i quarter
 ```
 
-and the PDF is generated in project_data/report.pdf_
+and the PDF is generated in project*data/report.pdf*
 
 # Usage
 
 Use `-h` flag to show usage as follows:
+
 ```
 $ > bin/manuscripts -h
 -d DATA_DIR, --data-dir DATA_DIR
                         Directory to store the data results
 ```
+
 **Params**:
 
 `-d, --data-dir`: directory to store data files that will be used to create the report PDF file (csv and eps files containing metrics results).
