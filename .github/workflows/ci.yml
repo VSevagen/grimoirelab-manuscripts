@@ -71,6 +71,7 @@ jobs:
         mysqladmin --host 127.0.0.1 --port ${{ job.services.mysql.ports[3306] }} -uroot -proot create test_sh
         cd tests
         coverage run --include=*manuscripts/manuscripts* run_tests.py
+        coverage report -m
         # --service=github is a workaround for bug
         # https://github.com/coveralls-clients/coveralls-python/issues/251
         coveralls --service=github
